@@ -1,0 +1,102 @@
+/* 🌊 CompareTab Styles — Clean, Modern, Responsive */
+
+.compare-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.compare-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Baseline info */
+.baseline-info {
+  text-align: center;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  color: #1e293b;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Table styling */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.compare-table th {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+}
+
+.compare-table td {
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.compare-table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.compare-table tr:hover td {
+  background: #e0f2fe;
+  transition: all 0.3s ease;
+}
+
+/* Compliance icons */
+.compare-table td:last-child {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .compare-table th,
+  .compare-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .compare-title {
+    font-size: 1.4rem;
+  }
+
+  .baseline-info {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* Empty or loading state */
+.compare-empty {
+  text-align: center;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #475569;
+  font-style: italic;
+}

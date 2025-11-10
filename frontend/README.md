@@ -1,16 +1,21 @@
-# Frontend - Minimal React + Vite app
+# ⚓ FuelEU Maritime — Compliance Platform
 
-## Quick start
+A full-stack implementation of the **FuelEU Maritime compliance dashboard**, built as part of the developer assignment.  
+It models the **EU 2023/1805 Regulation** logic — handling routes, emission comparisons, compliance balances (CB), banking, and pooling.
 
-1. Install dependencies:
-   ```
-   cd frontend
-   npm install
-   ```
+---
 
-2. Run dev server:
-   ```
-   npm run dev
-   ```
+## 🧠 Overview
 
-This app expects backend proxied at /api (development: use vite proxy or run backend on same host port mapping).
+This system calculates and visualizes how vessels perform against the target GHG emission intensity standards set under FuelEU.  
+It lets users:
+- View and filter shipping routes
+- Compare emissions across routes
+- Bank or apply compliance surpluses
+- Pool ships together for collective compliance
+
+---
+
+## 🧩 Architecture (Hexagonal / Clean)
+
+### Backend

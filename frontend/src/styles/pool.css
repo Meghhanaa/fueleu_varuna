@@ -1,0 +1,118 @@
+/* 🌊 PoolingTab Styles — Modern, Minimal, Responsive */
+
+.pooling-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Headings */
+.pooling-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.pooling-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+/* Table styling */
+.pooling-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pooling-table th,
+.pooling-table td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.pooling-table th {
+  background: #2563eb;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 0.9rem;
+}
+
+.pooling-table td {
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.pooling-table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.pooling-table tr:hover td {
+  background: #e0f2fe;
+  transition: all 0.3s ease;
+}
+
+/* Checkbox styling */
+.pooling-table input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Button area */
+.pooling-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pooling-actions button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
+}
+
+.pooling-actions button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.pooling-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pooling-title {
+    font-size: 1.4rem;
+  }
+
+  .pooling-table th,
+  .pooling-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .pooling-actions button {
+    width: 100%;
+  }
+}
